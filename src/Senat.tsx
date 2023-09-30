@@ -9,7 +9,7 @@ function Senat() {
     const [resultsData, setResultsData] = useState<any[]>([]);
 
     useEffect(() => {
-        fetch(`h${BASE_URL}/results/senat/detailed`)
+        fetch(`${BASE_URL}/results/senat/detailed`)
         .then(response => {
             return response.json()
         })
