@@ -1,0 +1,188 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+svg.map path {
+  cursor: pointer;
+  fill: #e3e3e3;
+  stroke: #b0b0b0;
+  stroke-width: .15%;
+  stroke-linejoin: round;
+  stroke-linecap: round
+}
+
+svg.map a[data-id] path.active,svg.map a[data-id] path:hover {
+  filter: brightness(0.7);
+}
+
+.seat {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  margin: 0.1rem;
+}
+
+#visualization {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+#visualization:hover {
+  margin-bottom: 2.5rem;
+}
+
+/* TODO */
+div[data-type]:hover::after {
+  content: attr(data-type);
+  display: block;
+  padding: 0.3rem 0.35rem;
+  white-space: nowrap;
+  background: #000;
+  border-radius: 0.3rem;
+  font-size: 0.65rem;
+  color: #fff;
+  z-index: 1;
+  height: 1rem;
+  position: relative;
+  bottom: -4rem;
+  left: 0;
+  font-weight: 400;
+}
+
+/* Milligram.css */
+body {
+  color: #606c76;
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: .01em;
+  line-height: 1.6;
+}
+
+table {
+  border-spacing: 0;
+  display: block;
+  overflow-x: auto;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+td,
+th {
+  border-bottom: 0.1rem solid #e1e1e1;
+  padding: 0.3rem 1rem;
+  max-width: 30%;
+}
+
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}
+
+td:last-child,
+th:last-child {
+  padding-right: 0;
+}
+
+/* End of Milligram.css */
+
+h3 {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+#table {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#menu
+  {
+	   margin: 0;
+     background: #9b4dca;
+     font-size: 0.9rem;
+  }
+#menu ul
+  {
+    text-align: center;
+    margin: 0;
+  }
+
+#menu li
+  {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+#menu li a, #menu li span
+  {
+  	display: inline-block;
+  	margin-left: 0;
+  	padding: 1.3em 2em 1em 2em;
+  	letter-spacing: 0.20em;
+  	text-decoration: none;
+  	font-size: 1em;
+  	font-weight: 600;
+  	text-transform: uppercase;
+  	outline: 0;
+  	color: #FFF;
+  }
+
+#menu a:hover
+  {
+    color: #FFF !important;
+    background: #606c76;
+  }
+
+#menuClicked
+  {
+    color: #9b4dca !important;
+    background: #FFF;
+  }
+
+#info-title{
+  width: 92%;
+}
+
+.backButton {
+  float: left;
+}
