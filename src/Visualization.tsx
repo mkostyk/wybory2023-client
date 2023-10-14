@@ -54,11 +54,9 @@ function createVisualization(data: FullData, seats: number, size = 'standard') {
         createManyPies(key, 'safe', value.safe, size)
         createManyPies(key, 'likely', value.likely, size)
         createManyPies(key, 'leaning', value.leaning, size)
-        count += value.safe + value.likely + value.leaning
+        createManyPies(key, 'tossup', value.tossup, size) // Party tossups
+        count += value.safe + value.likely + value.leaning + value.tossup
     }
-
-    // Create seats - count pies for party 'tossup'
-    createManyPies('tossup', 'safe', seats - count, size)
 }
 
 export function createDefaultVisualization(data: FullData, type: string) {
