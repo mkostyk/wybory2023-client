@@ -1,4 +1,5 @@
-export const BASE_URL = "https://wybory-2023-749033c3329e.herokuapp.com"
+//export const BASE_URL = "https://wybory-2023-749033c3329e.herokuapp.com"
+export const BASE_URL = "https://wybory-2023-prod-92863b81ba12.herokuapp.com/"
 
 export const isObjectEmpty = (objectName: any) => {
     return (
