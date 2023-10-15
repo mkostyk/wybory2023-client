@@ -10,7 +10,7 @@
     } from 'chart.js';
     import { Bar } from 'react-chartjs-2';
     import { OPPOSITION } from './utils';
-    import { FullData } from './utils';
+    import { FullData, isObjectEmpty } from './utils';
     import Chart from 'chart.js/auto'
 
     ChartJS.register(
@@ -24,7 +24,8 @@
 
     export function createProgressBar(resultsData: FullData) {
         const barDiv = document.getElementById('progressBar')
-        if (!barDiv) {
+        console.log(resultsData)
+        if (!barDiv || resultsData === undefined || isObjectEmpty(resultsData)) {
             return
         }
 

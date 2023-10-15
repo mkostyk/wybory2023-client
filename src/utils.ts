@@ -1,8 +1,17 @@
+//export const BASE_URL = "https://wybory-2023-749033c3329e.herokuapp.com"
 export const BASE_URL = "https://wybory-2023-prod-92863b81ba12.herokuapp.com/"
+
+export const isObjectEmpty = (objectName: any) => {
+    return (
+      objectName &&
+      Object.keys(objectName).length === 0 &&
+      objectName.constructor === Object
+    );
+  };
 
 export function getColorFromResult(results: any, id: number, type: string) {
     const result = results.results[id - 1]
-    if (result === undefined) {
+    if (result === undefined || isObjectEmpty(result)) {
         return '#898989'
     }
 
