@@ -75,6 +75,7 @@ export function createDefaultSejmInfo() {
     })
     .then(data => {
         clearInfo(-1, 'sejm')
+        createTable(data, 'sejm')
         createDefaultVisualization(data, 'sejm')
     })
 }
@@ -99,6 +100,7 @@ export function createDefaultSenatInfo() {
     })
     .then(data => {
         clearInfo(-1, 'senat')
+        createTable(data, 'senat')
         createDefaultVisualization(data, 'senat')
     })
 }
