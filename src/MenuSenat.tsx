@@ -6,7 +6,7 @@ function MenuSenat() {
             <ul>
                 <li><a href="#sejm">Wybory do Sejmu</a></li>
                 <li><a href="#" id="menuClicked">Wybory do Senatu</a></li>
-                <li><a href="#senat">Wybory do Senatu</a></li>
+                <li><a href="#info">Informacje</a></li>
             </ul>
         </div>
     )
