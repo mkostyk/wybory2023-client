@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/wybory2023-client/static/css/main.9c2450e5.css",
-    "main.js": "/wybory2023-client/static/js/main.d8ea7d8d.js",
+    "main.js": "/wybory2023-client/static/js/main.5370de76.js",
     "index.html": "/wybory2023-client/index.html",
     "main.9c2450e5.css.map": "/wybory2023-client/static/css/main.9c2450e5.css.map",
-    "main.d8ea7d8d.js.map": "/wybory2023-client/static/js/main.d8ea7d8d.js.map"
+    "main.5370de76.js.map": "/wybory2023-client/static/js/main.5370de76.js.map"
   },
   "entrypoints": [
     "static/css/main.9c2450e5.css",
-    "static/js/main.d8ea7d8d.js"
+    "static/js/main.5370de76.js"
   ]
 }
