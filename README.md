@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Wyniki wyborów parlamentarnych 2023
+
+Strona pozwala wygodnie i w przejrzysty sposób podejrzeć wyniki pobierane z PKW
+
+Link: https://mkostyk.github.io/wybory2023-client/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
